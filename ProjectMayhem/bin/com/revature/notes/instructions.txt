@@ -1,0 +1,7 @@
+Make new java project
+package structure
+2 beans
+push the project to a NEW repo - DAY3Rob
+pull someone else's repo, make new branch for yourself
+add a driver class to that project that uses both beans
+push all changes back to your branch on the other person's repo

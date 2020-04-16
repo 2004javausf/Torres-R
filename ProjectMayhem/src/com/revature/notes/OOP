@@ -1,0 +1,25 @@
+Inheritance
+	when a programming language allows for a hierarchy of objects
+	chlid objects obtain states and behaviors from parent objects
+	multiple inheritance is not supported in Java (but interfaces)
+	**Diamond problem**
+Encapsulation
+	wrap and protect data fields, preventing manipulation outside of
+		the class
+	Usually requires getter and setter methods to change these values
+	Conceal internal state of object. Preserving integrity
+Polymorphism
+	the ability for the programming language to be able to tell the
+		difference between objects and methods of the same name with
+		different variable/class types.
+	Overriding - same name, same parameters, different behavior.
+	Overloading - same name, different parameters, different behavior
+	Yes, many forms but...
+	Multiple "is-a" relationships
+	Covariance
+Abstraction
+	Sometimes omitted from pillars of OOP
+	Hiding the implementation details
+	"what it does, not how it does it"
+	Exposing only functionality
+	Abstract Class - abstract methods have no implementation
