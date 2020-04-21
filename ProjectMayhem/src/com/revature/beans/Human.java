@@ -1,4 +1,8 @@
 package com.revature.beans;
+
+import com.revature.classtypes.Animal;
+import com.revature.classtypes.Hunt;
+
 //packages are just very fancy folders. Namespace
 
 /*
@@ -9,7 +13,7 @@ package com.revature.beans;
  * packages: lowercase and delimited by periods
  * Constants: ALL_CAPS typically delimited by underscores
  */
-public class Human {
+public class Human extends Animal implements Hunt{
 	/*
 	 * Members of a class - couple of forms
 	 * Instance variable - property of a specific object (human's name)
@@ -22,15 +26,15 @@ public class Human {
 	 * Code Block - things between {} 
 	 */
 		////Instance Code Block
-	{System.out.println("I'm in an Instance code block");}
+	//{System.out.println("I'm in an Instance code block");}
 	
 		////Static code
-	static {System.out.println("This time I'm in a static code block");}
+	//static {System.out.println("This time I'm in a static code block");}
 	
 	
 	//no args constructor
 	public Human() {
-		System.out.println("I'm in the no args constructor");
+		//System.out.println("I'm in the no args constructor");
 	}
 	
 	public Human(String name, int age, int weight) {
@@ -38,7 +42,7 @@ public class Human {
 		this.name=name;
 		this.age=age;
 		this.weight=weight;
-		System.out.println("I'm in the constructor with fields");
+		//System.out.println("I'm in the constructor with fields");
 	}
 	
 	private String name;
@@ -77,4 +81,17 @@ public class Human {
 	public void setWeight(int weight) {
 		this.weight=weight; //weight is method scope; This.weight is Instance scope
 	}
+
+	@Override
+	public void findPrey() {
+		System.out.println("I poke things with a stick");
+		
+	}
+
+	@Override
+	public void breathe() {
+		System.out.println("I breath through my nose and mouth, and it sucks.");
+		
+	}
+	
 }
