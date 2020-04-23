@@ -1,7 +1,7 @@
 package com.revature.beans;
 
-import com.revature.classtypes.Animal;
-import com.revature.classtypes.Hunt;
+//import com.revature.classtypes.Animal;
+//import com.revature.classtypes.Hunt;
 
 //packages are just very fancy folders. Namespace
 
@@ -13,7 +13,7 @@ import com.revature.classtypes.Hunt;
  * packages: lowercase and delimited by periods
  * Constants: ALL_CAPS typically delimited by underscores
  */
-public class Human extends Animal implements Hunt{
+//public class Human extends Animal implements Hunt{
 	/*
 	 * Members of a class - couple of forms
 	 * Instance variable - property of a specific object (human's name)
@@ -33,65 +33,65 @@ public class Human extends Animal implements Hunt{
 	
 	
 	//no args constructor
-	public Human() {
-		//System.out.println("I'm in the no args constructor");
-	}
+//	public Human() {
+//		//System.out.println("I'm in the no args constructor");
+//	}
 	
-	public Human(String name, int age, int weight) {
-		//super();
-		this.name=name;
-		this.age=age;
-		this.weight=weight;
-		//System.out.println("I'm in the constructor with fields");
-	}
-	
-	private String name;
-	private int age;
-	private int weight;
-	
-	//getters
-	public String getName() {
-		String s;
-		return name;
-	}
-	
-	public int getAge() {
-		return age;
-	}
-	
-	public int getWeight() {
-		return weight;
-	}
-	
-	//setters
-	public void setName(String name) {
-		this.name=name;
-	}
-	
-	@Override
-	public String toString() {
-		return "Human [name=" + name + ", age=" + age + ", weight=" + weight + "]";
-	}
-
-	public void setAge(int age) {
-		this.age=age;
-	}
-	
-	//example of Shadowing
-	public void setWeight(int weight) {
-		this.weight=weight; //weight is method scope; This.weight is Instance scope
-	}
-
-	@Override
-	public void findPrey() {
-		System.out.println("I poke things with a stick");
-		
-	}
-
-	@Override
-	public void breathe() {
-		System.out.println("I breath through my nose and mouth, and it sucks.");
-		
-	}
-	
-}
+//	public Human(String name, int age, int weight) {
+//		//super();
+//		this.name=name;
+//		this.age=age;
+//		this.weight=weight;
+//		//System.out.println("I'm in the constructor with fields");
+//	}
+//	
+//	private String name;
+//	private int age;
+//	private int weight;
+//	
+//	//getters
+//	public String getName() {
+//		String s;
+//		return name;
+//	}
+//	
+//	public int getAge() {
+//		return age;
+//	}
+//	
+//	public int getWeight() {
+//		return weight;
+//	}
+//	
+//	//setters
+//	public void setName(String name) {
+//		this.name=name;
+//	}
+//	
+//	@Override
+//	public String toString() {
+//		return "Human [name=" + name + ", age=" + age + ", weight=" + weight + "]";
+//	}
+//
+//	public void setAge(int age) {
+//		this.age=age;
+//	}
+//	
+//	//example of Shadowing
+//	public void setWeight(int weight) {
+//		this.weight=weight; //weight is method scope; This.weight is Instance scope
+//	}
+//
+//	@Override
+//	public void findPrey() {
+//		System.out.println("I poke things with a stick");
+//		
+//	}
+//
+//	@Override
+//	public void breathe() {
+//		System.out.println("I breath through my nose and mouth, and it sucks.");
+//		
+//	}
+//	
+//}
