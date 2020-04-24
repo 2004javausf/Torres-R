@@ -12,25 +12,28 @@ import java.util.List;
 import com.revature.beans.Human;
 
 public class IOWithCollections {
-	private static final String humanFile = "human.txt";
-	public static List<Human> humanList = new ArrayList<Human>();
+	private static final String humanFile="human.txt";
+	public static List<Human> humanList= new ArrayList<Human>();
 	
 	public static void writeHumanFile() {
 		try {
-			ObjectOutputStream objectOut = new ObjectOutputStream(new FileOutputStream(humanFile));
-			objectOut.defaultWriteObject();
+			ObjectOutputStream objectOut= new ObjectOutputStream(new FileOutputStream(humanFile));
+			objectOut.writeObject(humanList);
 			objectOut.close();
-			} catch (FileNotFoundException e) {
-				e.printStackTrace();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
+	}
+	
 	@SuppressWarnings("unchecked")
 	public static void readHumanFile() {
 		try {
-			ObjectInputStream objectIn = new ObjectInputStream(new FileInputStream(humanFile));
-			humanList = (ArrayList<Human>)objectIn.readObject();
+			ObjectInputStream objectIn= new ObjectInputStream(new FileInputStream(humanFile));
+			humanList= (ArrayList<Human>)objectIn.readObject();
 			objectIn.close();
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
@@ -38,8 +41,10 @@ public class IOWithCollections {
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}catch (ClassNotFoundException e) {
+		} catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		}
+		
 	}
+}

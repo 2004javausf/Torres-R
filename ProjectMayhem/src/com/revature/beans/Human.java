@@ -87,6 +87,11 @@ public class Human implements Hunt{
 	public String toString() {
 		return "Human [name=" + name + ", age=" + age + ", weight=" + weight + ", homePlanet= " + homePlanet+" ]";
 	}
+	public void breathe() {
+		System.out.println("I don't breath because I'm dead");
+		// TODO Auto-generated method stub
+		
+	}
 	
 }
 

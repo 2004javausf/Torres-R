@@ -16,7 +16,7 @@ public class IO {
 	
 	public void writeOutputStreamContents(String contents) {
 		OutputStream os = null;
-		File file = new File("outFile.txt");
+		File file = new File(outFile);
 		try {
 			os = new FileOutputStream(file, true); //false would overwrite. true appends to end
 			os.write(contents.getBytes());
